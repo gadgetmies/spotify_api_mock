@@ -1,0 +1,305 @@
+{
+  "uuid": "9bee7da7-c690-4979-a6d6-ac87fd1fc8d6",
+  "lastMigration": 32,
+  "name": "Spotify Accounts",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "6b35b175-78b1-49ad-9170-7a7b381cdde7",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/token",
+      "responses": [
+        {
+          "uuid": "c50862e0-20f5-4e9a-beae-78a016c24703",
+          "body": "{\"access_token\":\"zNjHX5pdZaBLM7Zv1QqyQ1wNviSvDzMAmgMPfrPFzzeRQ8fsXGzYXiVGA84H1BdrvKXatdzkg1v5Mf-1WH8gaABtIwuwiVHpLU_cP_gMeaiLyuhH6YC\",\"token_type\":\"Bearer\",\"expires_in\":3600}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "date",
+              "value": "Sat, 16 Dec 2023 13:29:05 GMT"
+            },
+            {
+              "key": "server",
+              "value": "envoy"
+            },
+            {
+              "key": "set-cookie",
+              "value": "__Host-device_id=AQBr_Dt9wTNP6kp616rafs2KYkvOH6HqSzP947Ur1KeU36glWShKuL_byADKViz3UfK2DNOqX4rcxIMscP_3d9-GYh6zjtOHKLE;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax,sp_tr=false;Version=1;Path=/;Secure;SameSite=Lax"
+            },
+            {
+              "key": "sp-trace-id",
+              "value": "f9eef1ec6a77fd85"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=31536000"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/2 edgeproxy, 1.1 google"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-envoy-upstream-service-time",
+              "value": "11"
+            },
+            {
+              "key": "content-length",
+              "value": "174"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "908ea045-94be-41eb-a8b9-55dcf2d20504",
+      "type": "http",
+      "documentation": "User authentication",
+      "method": "post",
+      "endpoint": "api/token",
+      "responses": [
+        {
+          "uuid": "bb3b9f30-1eed-4036-a956-53f4a0544a55",
+          "body": "{\"access_token\":\"BQA7LWwmHg04k3IL6kCIum0_iAJMT4fxhcreCnJwgsDtyXKyrtpsDs1YREBXsTUoqa38nN2t4fvN9kHkr5HIj8-HBaiyHD4z5WKVOQUcwDnd14N_RABivvAcyvHOOJa07Ga9ka5My2kHbFrjtqb5py62pioOUbCrgd9E-njZonOKFaz5h6FR_FiW_aKYwogweR9_gj5eiVPzRUHnuho-apzdQ_pvKn4HA8X5NSeJdBOeBWdjTPNuY5GegKQebw\",\"token_type\":\"Bearer\",\"expires_in\":3600,\"refresh_token\":\"AQDzatPr6dJBb0NLt3-FJXqW4ORVeTma-2UDBW9Ob1TDrGVuV8kAsmy6ofMbW6GibhwFri2r6x7UR5QPUp0Iu9cQUntWurcVs71ojF8mHrRUW89LX_33NiI-pjOHCj7f6Ac\",\"scope\":\"playlist-read-private user-follow-modify user-follow-read playlist-modify-private playlist-modify-public\"}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "date",
+              "value": "Sat, 16 Dec 2023 13:46:47 GMT"
+            },
+            {
+              "key": "server",
+              "value": "envoy"
+            },
+            {
+              "key": "set-cookie",
+              "value": "__Host-device_id=AQDuu0xJ3sYuyhCIoia-u5RxTqWZ_4mOqZRjb52FxxY8ImmGZl0iIJfmRBEYNXuG8_0YvtPIS33WPCdGtBfzwFTdUGYW3zc169Q;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax,sp_tr=false;Version=1;Path=/;Secure;SameSite=Lax"
+            },
+            {
+              "key": "sp-trace-id",
+              "value": "031767c41602c31e"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=31536000"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/2 edgeproxy, 1.1 google"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-envoy-upstream-service-time",
+              "value": "28"
+            },
+            {
+              "key": "content-length",
+              "value": "578"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "f2d5fd8f-f27d-4bdf-a806-4c6296cb4c80",
+      "type": "http",
+      "documentation": "De-authorize?",
+      "method": "post",
+      "endpoint": "api/token",
+      "responses": [
+        {
+          "uuid": "7c893c41-57c0-49a9-b640-3d8a87f4b846",
+          "body": "{\"access_token\":\"BQCUZPY7drMRXlnvBKgAHuR7zwui7xLMTTRJxZ3GDiBScmkrEgdOMbTOl_l1sH87mRlbuAn_6WsB_A4U0dTWGIXzD2Efa4hSptzo5sQDZTXfPTiwb30\",\"token_type\":\"Bearer\",\"expires_in\":3600}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "connection",
+              "value": "close"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json"
+            },
+            {
+              "key": "date",
+              "value": "Sat, 16 Dec 2023 13:47:06 GMT"
+            },
+            {
+              "key": "server",
+              "value": "envoy"
+            },
+            {
+              "key": "set-cookie",
+              "value": "__Host-device_id=AQDOGbf2wYhHG13xAV_7iApS4knVe7TNggeod8-sJWdAd6fzNmL2CtDfBJljd_N2r5HEi0QMqCoK4EitlqNfhRe8vinGDiXSN98;Version=1;Path=/;Max-Age=2147483647;Secure;HttpOnly;SameSite=Lax,sp_tr=false;Version=1;Path=/;Secure;SameSite=Lax"
+            },
+            {
+              "key": "sp-trace-id",
+              "value": "74f319e1fa4490b9"
+            },
+            {
+              "key": "strict-transport-security",
+              "value": "max-age=31536000"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/2 edgeproxy, 1.1 google"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "x-envoy-upstream-service-time",
+              "value": "9"
+            },
+            {
+              "key": "content-length",
+              "value": "174"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "6b35b175-78b1-49ad-9170-7a7b381cdde7"
+    },
+    {
+      "type": "route",
+      "uuid": "908ea045-94be-41eb-a8b9-55dcf2d20504"
+    },
+    {
+      "type": "route",
+      "uuid": "f2d5fd8f-f27d-4bdf-a806-4c6296cb4c80"
+    }
+  ],
+  "proxyMode": true,
+  "proxyHost": "https://accounts.spotify.com",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
